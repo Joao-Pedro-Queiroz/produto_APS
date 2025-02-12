@@ -31,11 +31,11 @@ public class CompraService {
         Usuario usuario = usuarioService.getUsuario(compra.getUsuario());
 
         for (String idProduto : compra.getProdutos()) {
-            produtoService.getProduto(idProduto)
+            produtoService.getProduto(idProduto);
         }
 
         for (String idProduto : compra.getProdutos()) {
-            produtoService.diminuirEstoque(idProduto)
+            produtoService.diminuirEstoque(idProduto);
         }
 
 
